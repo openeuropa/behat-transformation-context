@@ -1,0 +1,13 @@
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - Behat\MinkExtension\Context\MinkContext
+        - OpenEuropa\TransformationContext
+            transform_tokens:
+              node_tag: 'div'
+  extensions:
+    Behat\MinkExtension:
+      goutte: ~
+      base_url: http://localhost:8000
