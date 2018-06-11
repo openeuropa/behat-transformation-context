@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types = 1);
-
 namespace OpenEuropa\Behat;
 
 use Behat\Behat\Context\Context;
@@ -52,7 +50,7 @@ class TransformationContext implements Context
    * @Transform :tag
    * @Transform :element
    */
-  public function transformElement(string $label)
+  public function transformElement($label)
   {
     return isset($this->elements[$label]) ? $this->elements[$label] : $label;
   }
@@ -68,7 +66,7 @@ class TransformationContext implements Context
    *
    * @Transform /^the ([A-za-z ]+) page$/
    */
-  public function transformPageLabel(string $name)
+  public function transformPageLabel($name)
   {
     return isset($this->pages[$name]) ? $this->pages[$name] : $name;
   }
