@@ -9,7 +9,8 @@ use Behat\Behat\Context\Context;
 /**
  * Class TransformationContext.
  */
-class TransformationContext implements Context {
+class TransformationContext implements Context
+{
 
   /**
    * Mapping between human readable element labels and CSS selectors.
@@ -33,7 +34,8 @@ class TransformationContext implements Context {
    * @param array $pages
    *   Page URLs mappings.
    */
-  public function __construct(array $elements, array $pages) {
+  public function __construct(array $elements, array $pages)
+  {
     $this->elements = $elements;
     $this->pages = $pages;
   }
@@ -50,7 +52,8 @@ class TransformationContext implements Context {
    * @Transform :tag
    * @Transform :element
    */
-  public function transformElement(string $label): string {
+  public function transformElement(string $label)
+  {
     return isset($this->elements[$label]) ? $this->elements[$label] : $label;
   }
 
@@ -65,7 +68,8 @@ class TransformationContext implements Context {
    *
    * @Transform /^the ([A-za-z ]+) page$/
    */
-  public function transformPageLabel(string $name): string {
+  public function transformPageLabel(string $name)
+  {
     return isset($this->pages[$name]) ? $this->pages[$name] : $name;
   }
 

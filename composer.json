@@ -1,5 +1,5 @@
 {
-  "name": "openeuropa/behat-transformation-context",
+  "name": "openeuropa/phingbehattask",
   "homepage": "https://github.com/openeuropa/behat-transformation-context",
   "description": "Behat package to transform human readable labels to selectors or page paths.",
   "keywords": ["behat", "test", "transform"],
@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "OpenEuropa\\BehatTransformationContext\\": "./src/"
+      "OpenEuropa\\Behat\\": "./src/"
     }
   }
 }
