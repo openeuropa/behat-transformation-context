@@ -34,7 +34,7 @@ class TransformationContext implements Context
    * @param array $pages
    *   Page URLs mappings.
    */
-  public function __construct(array $elements, array $pages)
+  public function __construct(array $elements = [], array $pages = [])
   {
     $this->elements = $elements;
     $this->pages = $pages;
