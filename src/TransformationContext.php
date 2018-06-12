@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types = 1);
-
 namespace OpenEuropa\Behat;
 
 use Behat\Behat\Context\Context;
