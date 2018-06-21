@@ -1,5 +1,4 @@
 /vendor/
-/tests/behat.yml
+behat.yml
 grumphp.yml
-phpunit.xml
 composer.lock
