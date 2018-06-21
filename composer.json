@@ -12,10 +12,12 @@
     "behat/behat": "^3.4"
   },
   "require-dev": {
+    "openeuropa/code-review": "^0.2"
   },
   "autoload": {
     "psr-4": {
       "OpenEuropa\\Behat\\": "./src/"
     }
-  }
+  },
+  "bin": ["bin/run"]
 }
