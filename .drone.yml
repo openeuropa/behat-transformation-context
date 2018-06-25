@@ -23,6 +23,12 @@ pipeline:
     commands:
       - ./vendor/bin/grumphp run
 
+  behat:
+    group: test
+    image: fpfis/php71-build:latest
+    commands:
+      - ./vendor/bin/behat
+
 matrix:
   IMAGE_PHP:
     - fpfis/php56-build:latest
