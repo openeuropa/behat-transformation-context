@@ -2,11 +2,12 @@ default:
   suites:
     default:
       contexts:
-        - FeatureContext
         - Behat\MinkExtension\Context\MinkContext
         - OpenEuropa\Behat\TransformationContext:
             elements:
-              node_tag: 'div'
+              html-tag: 'html'
+            pages:
+              home: 'index.php'
   extensions:
     Behat\MinkExtension:
       goutte: ~
