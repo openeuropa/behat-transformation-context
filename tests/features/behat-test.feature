@@ -5,5 +5,7 @@ Feature: Run a behat test
   I need strings to be parsed using transformation definitions
 
   Scenario: Strings in step are parsed using transformation definitions
-    Given I am on the homepage
-    And I should see an "html-tag" element
+    Given I point to the home page
+    Then previous step targets "index.php"
+    When I point to the "header" element
+    Then previous step targets "div#header"

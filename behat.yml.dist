@@ -1,14 +1,12 @@
 default:
   suites:
     default:
+      paths:
+        - %paths.base%/tests
       contexts:
-        - Behat\MinkExtension\Context\MinkContext
+        - OpenEuropa\Behat\Tests\FeatureContext
         - OpenEuropa\Behat\TransformationContext:
             elements:
-              html-tag: 'html'
+              header: 'div#header'
             pages:
               home: 'index.php'
-  extensions:
-    Behat\MinkExtension:
-      goutte: ~
-      base_url: http://localhost:8000

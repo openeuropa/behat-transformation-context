@@ -12,13 +12,16 @@
     "behat/behat": "^3.4"
   },
   "require-dev": {
-    "behat/mink-extension": "^2.3",
-    "behat/mink-goutte-driver": "^1.2",
     "openeuropa/code-review": "^0.2"
   },
   "autoload": {
     "psr-4": {
-      "OpenEuropa\\Behat\\": "./src/"
+      "OpenEuropa\\Behat\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "OpenEuropa\\Behat\\Tests\\": "tests/features/bootstrap"
     }
   },
   "bin": ["bin/run"]
