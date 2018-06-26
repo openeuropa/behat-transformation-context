@@ -1,4 +1,3 @@
-@api
 Feature: Run a behat test
   In order to run behat tests
   As a developer
