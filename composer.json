@@ -23,6 +23,5 @@
     "psr-4": {
       "OpenEuropa\\Behat\\Tests\\": "tests/features/bootstrap"
     }
-  },
-  "bin": ["bin/run"]
+  }
 }
