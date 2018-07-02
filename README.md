@@ -5,19 +5,17 @@
 This package provides a Behat context allowing to transform human readable labels to selectors or page paths.
 Such functionality improves the readability of the Behat tests.
 
-Installation
-------------
+## Installation
 
 ```
 $ composer require openeuropa/behat-transformation-context
 ```
 
-Configuration
--------------
+## Configuration
 
 Add the extension and context to your test suite in `behat.yml`:
 
-```
+```yaml
 default:
   suites:
     default:
@@ -29,20 +27,21 @@ default:
               home: 'index.php'
 ```
 
-Usage
------
+## Usage
 
 We can use steps such as [these](https://github.com/openeuropa/behat-transformation-context/blob/master/tests/features/behat-test.feature):
 
+```yaml
     Given I point to *the home page*
     Then previous step targets "*index.php*"
     When I point to the "*header*" element
     Then previous step targets "*div#header*"
+```
 
-Development
------------
+## Development
 
 Running tests locally:
+
 ```
 $ git clone git@github.com:openeuropa/behat-transformation-context.git
 $ cd behat-transformation-context
@@ -51,6 +50,7 @@ $ ./vendor/bin/behat
 ```
 
 [GrumPHP](https://github.com/phpro/grumphp/tree/master/doc) tasks will be ran at every commit, if you with to run them without performing a commit use the following command:
+
 ```
 $ ./vendor/bin/grumphp run
 ```
