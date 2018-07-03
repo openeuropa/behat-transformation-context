@@ -1,0 +1,12 @@
+default:
+  suites:
+    default:
+      paths:
+        - %paths.base%/tests
+      contexts:
+        - OpenEuropa\Behat\Tests\FeatureContext
+        - OpenEuropa\Behat\TransformationContext:
+            elements:
+              header: 'div#header'
+            pages:
+              home: 'index.php'
