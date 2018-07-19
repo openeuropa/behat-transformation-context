@@ -12,7 +12,7 @@
     "behat/behat": "^3.4"
   },
   "require-dev": {
-    "openeuropa/code-review": "^0.3"
+    "openeuropa/code-review": "~0.3"
   },
   "autoload": {
     "psr-4": {
