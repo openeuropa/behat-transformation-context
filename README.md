@@ -1,6 +1,7 @@
 # Behat Transformation Context
 
 [![Build Status](https://drone.fpfis.eu/api/badges/openeuropa/behat-transformation-context/status.svg)](https://drone.fpfis.eu/openeuropa/behat-transformation-context/)
+[![Packagist](https://img.shields.io/packagist/v/openeuropa/behat-transformation-context.svg)](https://packagist.org/packages/openeuropa/behat-transformation-context)
 
 This package provides a Behat context allowing to transform human readable labels to selectors or page paths.
 Such functionality improves the readability of the Behat tests.
