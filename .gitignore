@@ -2,5 +2,5 @@
 behat.yml
 grumphp.yml
 composer.lock
-.idea
-
+/.idea/
+docker-compose.yml
