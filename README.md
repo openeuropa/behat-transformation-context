@@ -1,5 +1,4 @@
 # Behat Transformation Context
-
 [![Build Status](https://drone.fpfis.eu/api/badges/openeuropa/behat-transformation-context/status.svg)](https://drone.fpfis.eu/openeuropa/behat-transformation-context/)
 [![Packagist](https://img.shields.io/packagist/v/openeuropa/behat-transformation-context.svg)](https://packagist.org/packages/openeuropa/behat-transformation-context)
 
