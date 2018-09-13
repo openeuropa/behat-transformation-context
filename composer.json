@@ -8,7 +8,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "behat/behat": "~3.4",
+        "behat/behat": "^3.4",
         "php": ">=5.4"
     },
     "require-dev": {
