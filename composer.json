@@ -1,7 +1,7 @@
 {
     "name": "openeuropa/behat-transformation-context",
     "homepage": "https://github.com/openeuropa/behat-transformation-context",
-    "description": "Behat package to transform human readable labels to selectors or page paths.",
+    "description": "Behat package to transform human readable labels into selectors or page paths.",
     "keywords": ["behat", "test", "transform"],
     "type": "library",
     "license": "EUPL-1.2",
