@@ -10,3 +10,4 @@ default:
               header: 'div#header'
             pages:
               home: 'index.php'
+              complex-page's url: 'complex.html'
