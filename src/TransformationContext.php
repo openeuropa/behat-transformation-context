@@ -64,7 +64,7 @@ class TransformationContext implements Context
      * @return string
      *   Relative URL.
      *
-     * @Transform /^the ([A-za-z ]+) page$/
+     * @Transform /^the (.+) page$/
      */
     public function transformPageLabel($name)
     {
