@@ -27,7 +27,7 @@ pipeline:
     group: test
     image: ${IMAGE_PHP=fpfis/httpd-php-dev:5.6}
     commands:
-      - ./vendor/bin/behat
+      - ./vendor/bin/behat --strict
 
 matrix:
   IMAGE_PHP:
