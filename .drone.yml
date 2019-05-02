@@ -4,35 +4,48 @@ workspace:
 
 services:
   web:
-    image: ${IMAGE_PHP=fpfis/httpd-php-dev:5.6}
+    image: fpfis/httpd-php-ci:${VERSION_PHP=7.1}
     environment:
      - DOCUMENT_ROOT=/test/behat-transformation-context
 
 pipeline:
   composer-install:
     group: prepare
-    image: ${IMAGE_PHP=fpfis/httpd-php-dev:5.6}
+    image: fpfis/httpd-php-ci:${VERSION_PHP=7.1}
     volumes:
       - /cache:/cache
     commands:
-      - composer update ${COMPOSER_BOUNDARY}
+      - composer install --ansi --no-suggest --no-progress
+
+  composer-update-lowest:
+    group: prepare-update
+    image: fpfis/httpd-php-ci:${VERSION_PHP=7.1}
+    volumes:
+      - /cache:/cache
+    commands:
+      - composer update --prefer-lowest --ansi --no-suggest --no-progress
+    when:
+      matrix:
+        COMPOSER_BOUNDARY: lowest
 
   grumphp:
     group: test
-    image: ${IMAGE_PHP=fpfis/httpd-php-dev:5.6}
+    image: fpfis/httpd-php-ci:${VERSION_PHP=7.1}
     commands:
       - ./vendor/bin/grumphp run
 
   behat:
     group: test
-    image: ${IMAGE_PHP=fpfis/httpd-php-dev:5.6}
+    image: fpfis/httpd-php-ci:${VERSION_PHP=7.1}
     commands:
       - ./vendor/bin/behat --strict
 
 matrix:
-  IMAGE_PHP:
-    - fpfis/httpd-php-dev:5.6
-    - fpfis/httpd-php-dev:7.1
+  VERSION_PHP:
+    - 5.6
+    - 7.1
+    - 7.2
+    - 7.3
   COMPOSER_BOUNDARY:
-    - '--prefer-lowest'
-    - ''
+    - lowest
+    - highest
