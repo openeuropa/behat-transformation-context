@@ -1,10 +1,20 @@
 # Change Log
 
+## [0.1.2](https://github.com/openeuropa/behat-transformation-context/tree/0.1.2) (2019-05-07)
+[Full Changelog](https://github.com/openeuropa/behat-transformation-context/compare/0.1.1...0.1.2)
+
+**Merged pull requests:**
+
+- OPENEUROPA-1766: Update drone, docker compose and documentation. [\#9](https://github.com/openeuropa/behat-transformation-context/pull/9) ([voidtek](https://github.com/voidtek))
+- OPENEUROPA-1533: Add --strict flag for behat tests. [\#8](https://github.com/openeuropa/behat-transformation-context/pull/8) ([sergepavle](https://github.com/sergepavle))
+- OPENEUROPA-1224: Relax regular expression on page transformation method. [\#7](https://github.com/openeuropa/behat-transformation-context/pull/7) ([imanoleguskiza](https://github.com/imanoleguskiza))
+
 ## [0.1.1](https://github.com/openeuropa/behat-transformation-context/tree/0.1.1) (2018-09-27)
 [Full Changelog](https://github.com/openeuropa/behat-transformation-context/compare/0.1.0...0.1.1)
 
 **Merged pull requests:**
 
+- OPENEUROPA-1241: Update CHANGELOG to create the tag 0.1.1 [\#6](https://github.com/openeuropa/behat-transformation-context/pull/6) ([voidtek](https://github.com/voidtek))
 - OPENEUROPA-774: Relax dependencies [\#5](https://github.com/openeuropa/behat-transformation-context/pull/5) ([voidtek](https://github.com/voidtek))
 - OPENEUROPA-721: Update code-review and grump.yml.dist file. [\#4](https://github.com/openeuropa/behat-transformation-context/pull/4) ([imanoleguskiza](https://github.com/imanoleguskiza))
 - OPENEUROPA-582: Update images on docker-compose and drone file. [\#3](https://github.com/openeuropa/behat-transformation-context/pull/3) ([voidtek](https://github.com/voidtek))
