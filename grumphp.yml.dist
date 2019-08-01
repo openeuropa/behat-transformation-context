@@ -1,9 +1,2 @@
 imports:
-  - { resource: vendor/openeuropa/code-review/dist/base-conventions.yml }
-parameters:
-  tasks.phpcs.standard: PSR2
-  tasks.phpcs.ignore_patterns:
-    - vendor/
-  tasks.phpcs.triggered_by:
-    - php
-
+  - { resource: vendor/openeuropa/code-review/dist/library-conventions.yml }
