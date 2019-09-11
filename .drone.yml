@@ -4,14 +4,14 @@ workspace:
 
 services:
   web:
-    image: fpfis/httpd-php-ci:${VERSION_PHP=7.1}
+    image: fpfis/httpd-php-ci:${PHP_VERSION=7.2}
     environment:
      - DOCUMENT_ROOT=/test/behat-transformation-context
 
 pipeline:
   composer-install:
     group: prepare
-    image: fpfis/httpd-php-ci:${VERSION_PHP=7.1}
+    image: fpfis/httpd-php-ci:${PHP_VERSION=7.2}
     volumes:
       - /cache:/cache
     commands:
@@ -19,7 +19,7 @@ pipeline:
 
   composer-update-lowest:
     group: prepare-update
-    image: fpfis/httpd-php-ci:${VERSION_PHP=7.1}
+    image: fpfis/httpd-php-ci:${PHP_VERSION=7.2}
     volumes:
       - /cache:/cache
     commands:
@@ -30,13 +30,13 @@ pipeline:
 
   grumphp:
     group: test
-    image: fpfis/httpd-php-ci:${VERSION_PHP=7.1}
+    image: fpfis/httpd-php-ci:${PHP_VERSION=7.2}
     commands:
       - ./vendor/bin/grumphp run
 
   behat:
     group: test
-    image: fpfis/httpd-php-ci:${VERSION_PHP=7.1}
+    image: fpfis/httpd-php-ci:${PHP_VERSION=7.2}
     commands:
       - ./vendor/bin/behat --strict
 
