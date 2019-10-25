@@ -41,7 +41,7 @@ pipeline:
       - ./vendor/bin/behat --strict
 
 matrix:
-  VERSION_PHP:
+  PHP_VERSION:
     - 5.6
     - 7.1
     - 7.2
