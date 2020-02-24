@@ -19,7 +19,7 @@ pipeline:
 
   composer-update-lowest:
     group: prepare-update
-    image: fpfis/httpd-php-ci:${PHP_VERSION=7.2}
+    image: fpfis/httpd-php-ci:${PHP_VERSION=7.3}
     volumes:
       - /cache:/cache
     commands:
@@ -30,13 +30,13 @@ pipeline:
 
   grumphp:
     group: test
-    image: fpfis/httpd-php-ci:${PHP_VERSION=7.2}
+    image: fpfis/httpd-php-ci:${PHP_VERSION=7.3}
     commands:
       - ./vendor/bin/grumphp run
 
   behat:
     group: test
-    image: fpfis/httpd-php-ci:${PHP_VERSION=7.2}
+    image: fpfis/httpd-php-ci:${PHP_VERSION=7.3}
     commands:
       - ./vendor/bin/behat --strict
 
