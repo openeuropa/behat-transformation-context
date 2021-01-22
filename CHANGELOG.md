@@ -1,10 +1,21 @@
 # Change Log
 
+## [0.2.0](https://github.com/openeuropa/behat-transformation-context/tree/0.2.0) (2020-04-08)
+[Full Changelog](https://github.com/openeuropa/behat-transformation-context/compare/0.1.2...0.2.0)
+
+**Merged pull requests:**
+
+- OPENEUROPA-2943: Upgrade to PHP 7.3. [\#14](https://github.com/openeuropa/behat-transformation-context/pull/14) ([sergepavle](https://github.com/sergepavle))
+- OPENEUROPA-2464: Use PHP 7.1 in docker-compose. [\#13](https://github.com/openeuropa/behat-transformation-context/pull/13) ([dxvargas](https://github.com/dxvargas))
+- OPENEUROPA-2258: Use PHP 7.2 in drone and docker image. [\#12](https://github.com/openeuropa/behat-transformation-context/pull/12) ([dxvargas](https://github.com/dxvargas))
+- OPENEUROPA-2054: Use library conventions for in grumphp. [\#11](https://github.com/openeuropa/behat-transformation-context/pull/11) ([dxvargas](https://github.com/dxvargas))
+
 ## [0.1.2](https://github.com/openeuropa/behat-transformation-context/tree/0.1.2) (2019-05-07)
 [Full Changelog](https://github.com/openeuropa/behat-transformation-context/compare/0.1.1...0.1.2)
 
 **Merged pull requests:**
 
+- OPENEUROPA-1813: Create release 0.1.2. [\#10](https://github.com/openeuropa/behat-transformation-context/pull/10) ([voidtek](https://github.com/voidtek))
 - OPENEUROPA-1766: Update drone, docker compose and documentation. [\#9](https://github.com/openeuropa/behat-transformation-context/pull/9) ([voidtek](https://github.com/voidtek))
 - OPENEUROPA-1533: Add --strict flag for behat tests. [\#8](https://github.com/openeuropa/behat-transformation-context/pull/8) ([sergepavle](https://github.com/sergepavle))
 - OPENEUROPA-1224: Relax regular expression on page transformation method. [\#7](https://github.com/openeuropa/behat-transformation-context/pull/7) ([imanoleguskiza](https://github.com/imanoleguskiza))
