@@ -20,17 +20,8 @@ services:
      - COMPOSERVER=--2
 
 pipeline:
-  composer-install:
+  composer-install-lowest:
     group: prepare
-    image: registry.fpfis.eu/fpfis/httpd-php:${PHP_VERSION}-ci
-    volumes:
-      - /cache:/cache
-    commands:
-      - composer self-update --2
-      - composer install --ansi --no-progress
-
-  composer-update-lowest:
-    group: prepare-update
     image: registry.fpfis.eu/fpfis/httpd-php:${PHP_VERSION}-ci
     volumes:
       - /cache:/cache
@@ -40,6 +31,18 @@ pipeline:
     when:
       matrix:
         COMPOSER_BOUNDARY: lowest
+
+  composer-install-highest:
+    group: prepare
+    image: registry.fpfis.eu/fpfis/httpd-php:${PHP_VERSION}-ci
+    volumes:
+      - /cache:/cache
+    commands:
+      - composer self-update --2
+      - composer install --ansi --no-progress
+    when:
+      matrix:
+        COMPOSER_BOUNDARY: highest
 
   grumphp:
     group: test
