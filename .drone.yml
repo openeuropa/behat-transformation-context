@@ -27,7 +27,7 @@ pipeline:
       - /cache:/cache
     commands:
       - composer self-update --2
-      - composer install --ansi --no-suggest --no-progress
+      - composer install --ansi --no-progress
 
   composer-update-lowest:
     group: prepare-update
@@ -36,7 +36,7 @@ pipeline:
       - /cache:/cache
     commands:
       - composer self-update --2
-      - composer update --prefer-lowest --ansi --no-suggest --no-progress
+      - composer update --prefer-lowest --ansi --no-progress
     when:
       matrix:
         COMPOSER_BOUNDARY: lowest
