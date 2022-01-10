@@ -17,6 +17,7 @@ services:
     image: registry.fpfis.eu/fpfis/httpd-php:${PHP_VERSION}-ci
     environment:
      - DOCUMENT_ROOT=/test/behat-transformation-context
+     - COMPOSERVER=--2
 
 pipeline:
   composer-install:
@@ -25,6 +26,7 @@ pipeline:
     volumes:
       - /cache:/cache
     commands:
+      - composer self-update --2
       - composer install --ansi --no-suggest --no-progress
 
   composer-update-lowest:
@@ -33,6 +35,7 @@ pipeline:
     volumes:
       - /cache:/cache
     commands:
+      - composer self-update --2
       - composer update --prefer-lowest --ansi --no-suggest --no-progress
     when:
       matrix:
