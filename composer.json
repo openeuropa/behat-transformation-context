@@ -23,5 +23,12 @@
         "psr-4": {
             "OpenEuropa\\Behat\\Tests\\": "./tests/features/bootstrap"
         }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "phpro/grumphp": true
+        }
     }
 }
