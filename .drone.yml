@@ -17,26 +17,32 @@ services:
     image: registry.fpfis.eu/fpfis/httpd-php:${PHP_VERSION}-ci
     environment:
      - DOCUMENT_ROOT=/test/behat-transformation-context
+     - COMPOSERVER=--2
 
 pipeline:
-  composer-install:
+  composer-install-lowest:
     group: prepare
     image: registry.fpfis.eu/fpfis/httpd-php:${PHP_VERSION}-ci
     volumes:
       - /cache:/cache
     commands:
-      - composer install --ansi --no-suggest --no-progress
+      - composer self-update --2
+      - composer update --prefer-lowest --ansi --no-progress
+    when:
+      matrix:
+        COMPOSER_BOUNDARY: lowest
 
-  composer-update-lowest:
-    group: prepare-update
+  composer-install-highest:
+    group: prepare
     image: registry.fpfis.eu/fpfis/httpd-php:${PHP_VERSION}-ci
     volumes:
       - /cache:/cache
     commands:
-      - composer update --prefer-lowest --ansi --no-suggest --no-progress
+      - composer self-update --2
+      - composer install --ansi --no-progress
     when:
       matrix:
-        COMPOSER_BOUNDARY: lowest
+        COMPOSER_BOUNDARY: highest
 
   grumphp:
     group: test
@@ -52,8 +58,8 @@ pipeline:
 
 matrix:
   PHP_VERSION:
-    - 7.2
-    - 7.3
+    - 7.4
+    - 8.0
   COMPOSER_BOUNDARY:
     - lowest
     - highest
