@@ -1,10 +1,24 @@
 # Change Log
 
+## [0.1.3](https://github.com/openeuropa/behat-transformation-context/tree/0.1.3) (2022-01-18)
+[Full Changelog](https://github.com/openeuropa/behat-transformation-context/compare/0.1.2...0.1.3)
+
+**Merged pull requests:**
+
+- EWPP-1885: Upgrade behat-transformation-context to PHP 8 [\#18](https://github.com/openeuropa/behat-transformation-context/pull/18) ([mferran-europe](https://github.com/mferran-europe))
+- EWPP-721: Update xdebug configuration. [\#17](https://github.com/openeuropa/behat-transformation-context/pull/17) ([22Alexandra](https://github.com/22Alexandra))
+- EWPP-516: Update docker php image. [\#16](https://github.com/openeuropa/behat-transformation-context/pull/16) ([22Alexandra](https://github.com/22Alexandra))
+- OPENEUROPA-2943: Upgrade to PHP 7.3. [\#14](https://github.com/openeuropa/behat-transformation-context/pull/14) ([sergepavle](https://github.com/sergepavle))
+- OPENEUROPA-2464: Use PHP 7.1 in docker-compose. [\#13](https://github.com/openeuropa/behat-transformation-context/pull/13) ([dxvargas](https://github.com/dxvargas))
+- OPENEUROPA-2258: Use PHP 7.2 in drone and docker image. [\#12](https://github.com/openeuropa/behat-transformation-context/pull/12) ([dxvargas](https://github.com/dxvargas))
+- OPENEUROPA-2054: Use library conventions for in grumphp. [\#11](https://github.com/openeuropa/behat-transformation-context/pull/11) ([dxvargas](https://github.com/dxvargas))
+
 ## [0.1.2](https://github.com/openeuropa/behat-transformation-context/tree/0.1.2) (2019-05-07)
 [Full Changelog](https://github.com/openeuropa/behat-transformation-context/compare/0.1.1...0.1.2)
 
 **Merged pull requests:**
 
+- OPENEUROPA-1813: Create release 0.1.2. [\#10](https://github.com/openeuropa/behat-transformation-context/pull/10) ([voidtek](https://github.com/voidtek))
 - OPENEUROPA-1766: Update drone, docker compose and documentation. [\#9](https://github.com/openeuropa/behat-transformation-context/pull/9) ([voidtek](https://github.com/voidtek))
 - OPENEUROPA-1533: Add --strict flag for behat tests. [\#8](https://github.com/openeuropa/behat-transformation-context/pull/8) ([sergepavle](https://github.com/sergepavle))
 - OPENEUROPA-1224: Relax regular expression on page transformation method. [\#7](https://github.com/openeuropa/behat-transformation-context/pull/7) ([imanoleguskiza](https://github.com/imanoleguskiza))
