@@ -1,11 +1,20 @@
 # Changelog
 
+## [0.3.0](https://github.com/openeuropa/behat-transformation-context/tree/0.3.0) (2025-06-10)
+
+[Full Changelog](https://github.com/openeuropa/behat-transformation-context/compare/0.2.0...0.3.0)
+
+**Merged pull requests:**
+
+- EWPP-5554: Unlock behat version. [\#22](https://github.com/openeuropa/behat-transformation-context/pull/22) ([nagyad](https://github.com/nagyad))
+
 ## [0.2.0](https://github.com/openeuropa/behat-transformation-context/tree/0.2.0) (2023-01-03)
 
 [Full Changelog](https://github.com/openeuropa/behat-transformation-context/compare/0.1.3...0.2.0)
 
 **Merged pull requests:**
 
+- Update CHANGELOG.md file for 0.2.0 release. [\#21](https://github.com/openeuropa/behat-transformation-context/pull/21) ([sergepavle](https://github.com/sergepavle))
 - EWPP-2891: Update to PHP 8.1. [\#20](https://github.com/openeuropa/behat-transformation-context/pull/20) ([22Alexandra](https://github.com/22Alexandra))
 
 ## [0.1.3](https://github.com/openeuropa/behat-transformation-context/tree/0.1.3) (2022-01-18)
