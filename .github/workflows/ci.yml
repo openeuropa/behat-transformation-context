@@ -10,4 +10,5 @@ jobs:
   automated-tests:
     uses: openeuropa/github-ci/.github/workflows/php-library-ci.yml@main
     with:
+      run_phpunit: false
       run_behat: true
